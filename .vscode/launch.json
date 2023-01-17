@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "env": {
+        "TS_NODE_PROJECT": "${workspaceFolder}\\tsconfig.json"
+      },
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register",
+      ],
+      "args": [
+        /* 
+        todo: 
+        - figure out why ts-node isn't working with src/index.ts
+        */
+        "${workspaceFolder}\\dist\\index.js"
+      ],
+    }
+  ]
+}

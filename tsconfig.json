@@ -1,21 +1,46 @@
 {
+	/* typescript options */
 	"compilerOptions": {
-		"target": "ESNext",
-		"module": "ESNext",
-		"moduleResolution": "node",
-		"esModuleInterop": true,
-		"isolatedModules": true,
-		"declaration": true,
-		"exactOptionalPropertyTypes": true,
-		"forceConsistentCasingInFileNames": true,
-		"strict": true,
+		/* tslib */
+		"importHelpers": true,
+		"target": "ES2021",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"rootDir": "./src",
+		"outDir": "./dist",
 		"baseUrl": ".",
-		"outDir": "dist",
-		"declarationDir": "dist",
-		"rootDirs": ["src"],
-		"paths": {
-			"@/*": ["src/*"]
-		}
+		"declaration": true,
+		"sourceMap": true,
+		"strict": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"resolveJsonModule": true,
+		/* preferences */
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"checkJs": true,
+		"exactOptionalPropertyTypes": true,
+		"importsNotUsedAsValues": "error",
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		// "noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"skipLibCheck": false,
 	},
-	"include": ["src"]
+	"include": [
+		"src"
+	],
+	/* ts-node options */
+	"ts-node": {
+		"transpileOnly": true,
+		"files": true,
+		"swc": true,
+		"esm": true,
+		"compilerOptions": {},
+	},
 }
