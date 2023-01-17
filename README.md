@@ -9,4 +9,3 @@
 | build:tsc | build the project using the typescript compiler | `tsc --build --clean && tsc` |
 | build:clean | removes ts-generated files from the `dist` folder | `tsc --build --clean` |
 | build:start | execute `tsc` build with node | `node ./dist/index.js` |
-```    
